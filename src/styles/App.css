@@ -1,0 +1,217 @@
+:root {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.widget-container {
+  min-width: 200px;
+  margin: auto;
+  padding: 20px;
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.widget-container h1 {
+  font-size: 24px;
+  text-align: left;
+}
+
+.widget-container p {
+  text-align: left;
+}
+
+.input-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.input-main {
+  display: flex;
+  flex-direction: row;
+}
+
+.input-wrapper {
+  position: relative;
+}
+
+.input-wrapper input {
+  width: 100%;
+  padding: 10px 0 ;
+  border: none;
+  border-radius: 5px;
+}
+
+.input-wrapper img {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+}
+
+.widget-container button {
+  width: 100%;
+  padding: 10px 0 ;
+  border: none;
+  border-radius: 5px;
+  background-color: #f89406;
+  color: white;
+  font-size: 1em;
+}
+
+.input-and-button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.text-and-iab {
+  display: flex;
+  flex-direction: row;
+}
+
+@media (min-width: 600px) and (max-width: 850px) {
+  .input-wrapper {
+    width: 100%;
+  }
+  .widget-container p {
+    margin-right: 20px;
+  }
+  .widget-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .widget-container button {
+    width: 100%;
+  }
+  .input-wrapper input {
+    width: 220px;
+    margin-right: 20px;
+  }
+  .input-wrapper img {
+    right: 30px;
+  }
+  .text-and-iab {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 850px) and (max-width: 1024px) {
+  .widget-container p {
+    margin-right: 20px;
+  }
+  .widget-container {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .widget-container button {
+    width: 240px;
+  }
+  .input-wrapper input {
+    width: 200px;
+    margin-right: 20px;
+  }
+  .input-wrapper img {
+    right: 30px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .widget-container p {
+    margin: 0 20px 0 0;
+  }
+  .widget-container {
+    max-width: 1024px;
+    display: flex;
+    flex-direction: column;
+  }
+  .widget-container button {
+    width: 240px;
+  }
+  .input-wrapper input {
+    width: 200px;
+    margin-right: 20px;
+  }
+  .input-wrapper img {
+    right: 30px;
+  }
+}
+
+@media (min-width: 350px) and (max-width: 600px) {
+  .widget-container h1 {
+    font-size: 18px;
+  }
+  .input-wrapper {
+    width: 100%;
+  }
+  .widget-container p {
+    margin-right: 20px;
+  }
+  .widget-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .widget-container button {
+    width: 100%;
+  }
+  .input-wrapper input {
+    width: 100%;
+  }
+  .input-wrapper img {
+    right: 30px;
+  }
+  .text-and-iab {
+    display: flex;
+    flex-direction: column;
+  }
+  .input-and-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .input-main {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 350px) {
+  .widget-container h1 {
+    font-size: 18px;
+  }
+  .input-wrapper {
+    width: 100%;
+  }
+  .widget-container p {
+    margin-right: 20px;
+  }
+  .widget-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .widget-container button {
+    width: 100%;
+  }
+  .input-wrapper input {
+    width: 100%;
+  }
+  .input-wrapper img {
+    right: 30px;
+  }
+  .text-and-iab {
+    display: flex;
+    flex-direction:column-reverse;
+  }
+  .input-and-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .input-main {
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+}
